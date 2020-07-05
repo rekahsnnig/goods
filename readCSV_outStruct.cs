@@ -53,10 +53,7 @@ public class readCSV_outStruct : MonoBehaviour {
     }
 
     void Update () {
-        pointComputeShader.SetBuffer (0, "VetexDatas1", strBuffer1);
-        pointComputeShader.SetBuffer (0, "VetexDatas2", strBuffer2);
-        pointComputeShader.SetFloat ("DeltaTime", Time.deltaTime);
-        pointComputeShader.Dispatch (0, strBuffer1.count / 8 + 1, 1, 1);
+        
     }
 
     int InitializeStringList1 (TextAsset csv, int listIndex) {
